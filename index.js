@@ -13,14 +13,25 @@ app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 3000);
 
 app.use(express.static(__dirname + '/public'));
+app.use(express.urlencoded());
 
 
 
 
 app.get('/', function(req,res) {
-    let q = mathgame.getAdditionQuestion()
+    res.render('home', mathgame.getQuestion());
+});
 
-    res.render('home', {question: q.text});
+
+
+app.post('/', function(req,res) {
+    let response = (req.body.answer == req.body.userAnswer);
+
+    let q = mathgame.getQuestion();
+    q.response = response;
+    console.log(q);
+
+    res.render('home', q);
 });
 
 
