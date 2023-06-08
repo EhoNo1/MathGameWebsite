@@ -29,7 +29,7 @@ app.post('/', function(req,res) {
 
     let q = mathgame.getQuestion();
     q.response = response;
-    console.log(q);
+    //console.log(q);
 
     res.render('home', q);
 });
