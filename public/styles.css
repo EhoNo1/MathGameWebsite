@@ -15,14 +15,25 @@ h1 {
 .center {
     margin: 0;
     position: absolute;
+    min-width: auto;
+    min-height: auto;
     top:50%;
     left:50%;
     transform: translate(-50%,-60%);
     text-align: center;
+    background-color: white;
 }
 
 body {
+    background-image: url('/textures/Marble012_1K-JPG_Color.jpg');
     font-family: openDyslexic;
     border: 3px solid purple;
     min-height: 90%;
+}
+
+footer {
+    text-align: right;
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }

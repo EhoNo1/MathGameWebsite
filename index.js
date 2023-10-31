@@ -16,8 +16,6 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded());
 
 
-
-
 app.get('/', function(req,res) {
     res.render('home', mathgame.getQuestion());
 });
