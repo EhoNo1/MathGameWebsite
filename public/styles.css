@@ -3,6 +3,26 @@
 @font-face { font-family: openDyslexic; font-weight: italic; src: url(fonts/OpenDyslexic-Bold.otf); }
 @font-face { font-family: openDyslexic; font-weight: italic-bold; src: url(fonts/OpenDyslexic-Bold.otf); }*/
 
+
+html {
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-60%);
+    text-align: center;
+}
+
 body {
     font-family: openDyslexic;
+    border: 3px solid purple;
+    min-height: 90%;
 }
