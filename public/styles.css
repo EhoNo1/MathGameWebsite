@@ -10,10 +10,12 @@ html {
 
 h1 {
     text-align: center;
+    
 }
 
 .center {
     margin: 0;
+    padding: 10%;
     position: absolute;
     min-width: auto;
     min-height: auto;
@@ -21,7 +23,8 @@ h1 {
     left:50%;
     transform: translate(-50%,-60%);
     text-align: center;
-    background-color: white;
+    background-image: url('/textures/Marble012_1K-JPG_Color.jpg') ;
+    filter: drop-shadow(0 0 0.75rem black)
 }
 
 body {
@@ -29,6 +32,17 @@ body {
     font-family: openDyslexic;
     border: 3px solid purple;
     min-height: 90%;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    text-align: center;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    text-align: center;
 }
 
 footer {

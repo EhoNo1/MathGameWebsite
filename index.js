@@ -23,7 +23,8 @@ app.get('/', function(req,res) {
 
 
 app.post('/', function(req,res) {
-    let response = (req.body.answer == req.body.userAnswer);
+    let response = "I beleive in you!";
+    if (req.body.answer == req.body.userAnswer) { response = "Correct!!!"}
 
     let q = mathgame.getQuestion();
     q.response = response;
